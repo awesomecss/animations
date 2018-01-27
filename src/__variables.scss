@@ -1,3 +1,11 @@
 :root {
+  // General:
   --AwesomeCSSAnimationsTransitionDuration: 300ms;
+  --AwesomeCSSAnimationsStaggerDelay: 60;
+
+  // Sequences:
+  --AwesomeCSSAnimationsCollapseMaxHeight: 100vh;
+  --AwesomeCSSAnimationsCollapseLgMaxHeight: 100em;
+  --AwesomeCSSAnimationsDirectionValue: 20px;
+  --AwesomeCSSAnimationsDirectionBigValue: 20%;
 }

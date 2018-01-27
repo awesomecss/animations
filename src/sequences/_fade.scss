@@ -1,0 +1,10 @@
+@import './__mixin.renderAnimation';
+
+@include renderAnimation(fade,
+  (
+    opacity: 0,
+  ),
+  (
+    opacity: 1
+  )
+);

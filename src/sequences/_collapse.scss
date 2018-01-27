@@ -1,7 +1,3 @@
-:root {
-  --AwesomeCSSAnimationsCollapseMaxHeight: 100em;
-}
-
 .ax-collapse {
   max-height: 0;
   overflow-y: hidden;
@@ -13,5 +9,11 @@
     max-height: var(--AwesomeCSSAnimationsCollapseMaxHeight);
     pointer-events: auto;
     transition-duration: calc(var(--AwesomeCSSAnimationsTransitionDuration) * 2);
+  }
+
+  &--lg {
+    &.ax-active {
+      max-height: var(--AwesomeCSSAnimationsCollapseLgMaxHeight);
+    }
   }
 }

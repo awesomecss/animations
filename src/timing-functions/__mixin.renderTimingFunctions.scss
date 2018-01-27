@@ -1,0 +1,29 @@
+@import "./__variables";
+
+@mixin renderTimingFunctions () {
+  @each $name, $prop in $defaultTimingFunctions {
+    &-#{$name} {
+      transition-timing-function: $prop;
+    }
+  }
+
+  @each $name, $value in $customCubicBezerValues {
+    &-#{$name} {
+      transition-timing-function: cubic-bezier(#{$value});
+    }
+  }
+}
+
+@mixin renderChildrenTimingFunctions () {
+  @each $name, $prop in $defaultTimingFunctions {
+    &-#{$name} > * {
+      transition-timing-function: $prop;
+    }
+  }
+
+  @each $name, $value in $customCubicBezerValues {
+    &-#{$name} > * {
+      transition-timing-function: cubic-bezier(#{$value});
+    }
+  }
+}

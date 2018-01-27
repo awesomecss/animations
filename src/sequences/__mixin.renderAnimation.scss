@@ -1,0 +1,23 @@
+@mixin renderAnimationProps ($props) {
+  @each $prop, $value in $props {
+    #{$prop}: $value;
+  }
+}
+
+@mixin renderAnimation ($name, $props, $nextProps) {
+  .ax-#{$name} {
+    @include renderAnimationProps ($props);
+    &.ax-active {
+      @include renderAnimationProps ($nextProps);
+    }
+  }
+
+  .ax-stagger-#{$name} {
+    & > * {
+      @include renderAnimationProps ($props);
+    }
+    &.ax-active > * {
+      @include renderAnimationProps ($nextProps);
+    }
+  }
+}

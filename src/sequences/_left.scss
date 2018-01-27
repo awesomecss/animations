@@ -1,0 +1,10 @@
+@import './__mixin.renderAnimation';
+
+@include renderAnimation(left,
+  (
+    transform: translateX(var(--AwesomeCSSAnimationsDirectionValue)),
+  ),
+  (
+    transform: translateX(0px),
+  )
+);

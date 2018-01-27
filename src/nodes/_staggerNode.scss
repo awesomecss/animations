@@ -1,10 +1,5 @@
 @at-root {
-  $staggerDelay: 60;
   $staggerTotal: 30;
-
-  :root {
-    --AwesomeCSSAnimationsStaggerDelay: #{$staggerDelay};
-  }
 
   .ax-stagger-node > * {
     transition-property: all;

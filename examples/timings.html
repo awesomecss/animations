@@ -1,8 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <link rel='stylesheet' href='../../dist/animations.css'>
+    <link rel='stylesheet' href='../dist/animations.css'>
     <style>
+      :root {
+        --AwesomeCSSAnimationsStaggerDelay: 300;
+        --AwesomeCSSAnimationsTransitionDuration: 600ms;
+      }
       body {
         padding: 20px 20px;
       }
@@ -15,10 +19,10 @@
   </head>
   <body>
     <p>
-      fade<br />
+      linear<br />
       <button onclick='toggleActiveClassName(event)'>Toggle: Active</button>
     </p>
-    <div class='ax-stagger-node ax-stagger-fade' data-ax-target>
+    <div class='ax-stagger-node ax-stagger-fade ax-stagger-left ax-tf-children-linear' data-ax-target>
       <div>Element</div>
       <div>Element</div>
       <div>Element</div>
@@ -27,10 +31,10 @@
     </div>
 
     <p>
-      fade, down<br />
+      ease<br />
       <button onclick='toggleActiveClassName(event)'>Toggle: Active</button>
     </p>
-    <div class='ax-stagger-node ax-stagger-fade ax-stagger-down' data-ax-target>
+    <div class='ax-stagger-node ax-stagger-fade ax-stagger-left ax-tf-children-ease' data-ax-target>
       <div>Element</div>
       <div>Element</div>
       <div>Element</div>
@@ -39,17 +43,28 @@
     </div>
 
     <p>
-      fade, left<br />
+      bounce<br />
       <button onclick='toggleActiveClassName(event)'>Toggle: Active</button>
     </p>
-    <div class='ax-stagger-node ax-stagger-fade ax-stagger-left' data-ax-target>
-      <div class='ax-tf-bounce'>Element</div>
+    <div class='ax-stagger-node ax-stagger-fade ax-stagger-left ax-tf-children-bounce' data-ax-target>
+      <div>Element</div>
       <div>Element</div>
       <div>Element</div>
       <div>Element</div>
       <div>Element</div>
     </div>
 
+    <p>
+      elastic<br />
+      <button onclick='toggleActiveClassName(event)'>Toggle: Active</button>
+    </p>
+    <div class='ax-stagger-node ax-stagger-fade ax-stagger-left ax-tf-children-elastic' data-ax-target>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+    </div>
 
     <script>
       // Tiny bit of JS, just to active the stagger (by adding the active class)

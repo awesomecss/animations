@@ -1,0 +1,10 @@
+@import './__mixin.renderAnimation';
+
+@include renderAnimation(down,
+  (
+    transform: translateY(10px),
+  ),
+  (
+    transform: translateY(0px),
+  )
+);
