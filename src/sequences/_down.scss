@@ -2,7 +2,7 @@
 
 @include renderAnimation(down,
   (
-    transform: translateY(10px),
+    transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)),
   ),
   (
     transform: translateY(0px),

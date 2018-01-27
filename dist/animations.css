@@ -329,12 +329,12 @@
     max-height: var(--AwesomeCSSAnimationsCollapseLgMaxHeight); }
 
 .ax-down {
-  transform: translateY(10px); }
+  transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
   .ax-down.ax-active {
     transform: translateY(0px); }
 
 .ax-stagger-down > * {
-  transform: translateY(10px); }
+  transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
 
 .ax-stagger-down.ax-active > * {
   transform: translateY(0px); }
@@ -384,12 +384,12 @@
   transform: scale(1); }
 
 .ax-up {
-  transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
+  transform: translateY(var(--AwesomeCSSAnimationsDirectionValue)); }
   .ax-up.ax-active {
     transform: translateY(0px); }
 
 .ax-stagger-up > * {
-  transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
+  transform: translateY(var(--AwesomeCSSAnimationsDirectionValue)); }
 
 .ax-stagger-up.ax-active > * {
   transform: translateY(0px); }
