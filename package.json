@@ -3,7 +3,7 @@
   "packName": "animations",
   "version": "0.0.1",
   "homepage": "https://jonquach.com",
-  "description": "A functional CSS animation library",
+  "description": "A functional CSS animation library for UI interactions.",
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
