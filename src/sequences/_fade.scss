@@ -3,8 +3,10 @@
 @include renderAnimation(fade,
   (
     opacity: 0,
+    pointer-events: none,
   ),
   (
-    opacity: 1
+    opacity: 1,
+    pointer-events: auto,
   )
 );

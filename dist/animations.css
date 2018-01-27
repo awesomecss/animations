@@ -196,15 +196,19 @@
   transform: translateY(0px); }
 
 .ax-fade {
-  opacity: 0; }
+  opacity: 0;
+  pointer-events: none; }
   .ax-fade.ax-active {
-    opacity: 1; }
+    opacity: 1;
+    pointer-events: auto; }
 
 .ax-stagger-fade > * {
-  opacity: 0; }
+  opacity: 0;
+  pointer-events: none; }
 
 .ax-stagger-fade.ax-active > * {
-  opacity: 1; }
+  opacity: 1;
+  pointer-events: auto; }
 
 .ax-left {
   transform: translateX(var(--AwesomeCSSAnimationsDirectionValue)); }
