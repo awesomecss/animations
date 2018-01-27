@@ -11,7 +11,7 @@
     transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
   }
 
-  @for $i from 1 to $staggerTotal {
+  @for $i from 1 to ($staggerTotal + 1) {
     .ax-stagger.ax-active {
       & > * {
         &:nth-child(#{$i}) {
