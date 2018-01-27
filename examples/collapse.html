@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../dist/animations.css">
+    <style>
+      body {
+        padding: 20px 20px;
+      }
+      .ax-stagger-node > * {
+        background: #ddd;
+        padding: 10px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      fade<br />
+      <button onclick="toggleActiveClassName(event)">Toggle: Active</button>
+    </p>
+    <div class="ax-node ax-collapse ax-fade" data-ax-target>
+      <div class="ax-stagger-node ax-stagger-fade" data-ax-target>
+        <div>Element</div>
+        <div>Element</div>
+        <div>Element</div>
+        <div>Element</div>
+        <div>Element</div>
+      </div>
+    </div>
+
+    <p>Something under</p>
+
+    <script>
+      // Tiny bit of JS, just to active the stagger (by adding the active class)
+      const targetNode = document.querySelectorAll('[data-ax-target]')
+      const toggleActiveClassName = (event) => {
+        const node = event.target.parentNode.nextElementSibling
+        node.classList.toggle('ax-active')
+      }
+      const animateOnLoad = () => {
+        targetNode.forEach(n => n.classList.toggle('ax-active'))
+      }
+      setTimeout(animateOnLoad, 200)
+    </script>
+  </body>
+</html>

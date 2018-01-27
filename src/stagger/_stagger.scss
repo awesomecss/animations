@@ -6,13 +6,14 @@
     --AwesomeCSSAnimationsStaggerDelay: #{$staggerDelay};
   }
 
-  .ax-stagger > * {
+  .ax-stagger-node > * {
     transition-property: all;
     transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
+    transition-timing-function: ease;
   }
 
   @for $i from 1 to ($staggerTotal + 1) {
-    .ax-stagger.ax-active {
+    .ax-stagger-node.ax-active {
       & > * {
         &:nth-child(#{$i}) {
           transition-delay: calc(#{($i - 1)} * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms)
