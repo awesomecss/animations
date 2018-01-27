@@ -1,0 +1,8 @@
+.ax-stagger-left {
+  & > * {
+    transform: translateX(10px);
+  }
+  &.ax-active > * {
+    transform: translateX(0px);
+  }
+}

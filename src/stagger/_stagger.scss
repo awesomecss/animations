@@ -7,6 +7,7 @@
   }
 
   .ax-stagger > * {
+    transition-property: all;
     transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
   }
 

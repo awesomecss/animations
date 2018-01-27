@@ -1,6 +1,6 @@
 /**
  * @awesomecss/animations v0.0.1 (https://jonquach.com)
- * A function CSS animation library
+ * A functional CSS animation library
  * Licensed under MIT
  */
 :root {
@@ -10,6 +10,7 @@
   --AwesomeCSSAnimationsStaggerDelay: 60; }
 
 .ax-stagger > * {
+  transition-property: all;
   transition-duration: var(--AwesomeCSSAnimationsTransitionDuration); }
 
 .ax-stagger.ax-active > *:nth-child(1) {
@@ -99,9 +100,20 @@
 .ax-stagger.ax-active > *:nth-child(29) {
   transition-delay: calc(28 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
 
+.ax-stagger-down > * {
+  transform: translateY(-10px); }
+
+.ax-stagger-down.ax-active > * {
+  transform: translateY(0px); }
+
 .ax-stagger-fade > * {
-  opacity: 0;
-  transition-property: opacity; }
+  opacity: 0; }
 
 .ax-stagger-fade.ax-active > * {
   opacity: 1; }
+
+.ax-stagger-left > * {
+  transform: translateX(10px); }
+
+.ax-stagger-left.ax-active > * {
+  transform: translateX(0px); }

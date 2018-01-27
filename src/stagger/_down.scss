@@ -1,0 +1,8 @@
+.ax-stagger-down {
+  & > * {
+    transform: translateY(-10px);
+  }
+  &.ax-active > * {
+    transform: translateY(0px);
+  }
+}
