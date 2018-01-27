@@ -18,7 +18,7 @@
       fade<br />
       <button onclick="toggleActiveClassName(event)">Toggle: Active</button>
     </p>
-    <div class="ax-stagger-node ax-stagger-fade">
+    <div class="ax-stagger-node ax-stagger-fade" data-ax-target>
       <div>Element</div>
       <div>Element</div>
       <div>Element</div>
@@ -30,7 +30,7 @@
       fade, down<br />
       <button onclick="toggleActiveClassName(event)">Toggle: Active</button>
     </p>
-    <div class="ax-stagger-node ax-stagger-fade ax-stagger-down">
+    <div class="ax-stagger-node ax-stagger-fade ax-stagger-down" data-ax-target>
       <div>Element</div>
       <div>Element</div>
       <div>Element</div>
@@ -42,7 +42,7 @@
       fade, left<br />
       <button onclick="toggleActiveClassName(event)">Toggle: Active</button>
     </p>
-    <div class="ax-stagger-node ax-stagger-fade ax-stagger-left">
+    <div class="ax-stagger-node ax-stagger-fade ax-stagger-left" data-ax-target>
       <div>Element</div>
       <div>Element</div>
       <div>Element</div>
@@ -53,7 +53,7 @@
 
     <script>
       // Tiny bit of JS, just to active the stagger (by adding the active class)
-      const targetNode = document.querySelectorAll('.ax-stagger')
+      const targetNode = document.querySelectorAll('[data-ax-target]')
       const toggleActiveClassName = (event) => {
         const node = event.target.parentNode.nextElementSibling
         node.classList.toggle('ax-active')
