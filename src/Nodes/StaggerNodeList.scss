@@ -1,14 +1,14 @@
 @at-root {
   $staggerTotal: 30;
 
-  .ax-stagger-node > * {
+  .ax-StaggerNodeList > * {
     transition-property: all;
     transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
     transition-timing-function: ease;
   }
 
   @for $i from 1 to ($staggerTotal + 1) {
-    .ax-stagger-node.ax-active {
+    .ax-StaggerNodeList.ax-active {
       & > * {
         &:nth-child(#{$i}) {
           transition-delay: calc(#{($i - 1)} * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms)
