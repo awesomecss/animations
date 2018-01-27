@@ -1,0 +1,22 @@
+@at-root {
+  $staggerDelay: 60;
+  $staggerTotal: 30;
+
+  :root {
+    --AwesomeCSSAnimationsStaggerDelay: #{$staggerDelay};
+  }
+
+  .ax-stagger > * {
+    transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
+  }
+
+  @for $i from 1 to $staggerTotal {
+    .ax-stagger.ax-active {
+      & > * {
+        &:nth-child(#{$i}) {
+          transition-delay: calc(#{($i - 1)} * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms)
+        }
+      }
+    }
+  }
+}

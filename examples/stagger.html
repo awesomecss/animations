@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../dist/animations.css">
+    <style>
+      .ax-stagger-fade > * {
+        background: #ddd;
+        padding: 10px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <button onclick="toggleActiveClassName()">Toggle: Active</button>
+
+    <div class="ax-stagger ax-stagger-fade">
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+    </div>
+
+    <script>
+      // Tiny bit of JS, just to active the stagger (by adding the active class)
+      const targetNode = document.querySelector('.ax-stagger')
+      const toggleActiveClassName = () => {
+        targetNode.classList.toggle('ax-active')
+      }
+      setTimeout(toggleActiveClassName, 200)
+    </script>
+  </body>
+</html>

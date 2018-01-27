@@ -1,0 +1,107 @@
+/**
+ * @awesomecss/animations v0.0.1 (https://jonquach.com)
+ * A function CSS animation library
+ * Licensed under MIT
+ */
+:root {
+  --AwesomeCSSAnimationsTransitionDuration: 300ms; }
+
+:root {
+  --AwesomeCSSAnimationsStaggerDelay: 60; }
+
+.ax-stagger > * {
+  transition-duration: var(--AwesomeCSSAnimationsTransitionDuration); }
+
+.ax-stagger.ax-active > *:nth-child(1) {
+  transition-delay: calc(0 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(2) {
+  transition-delay: calc(1 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(3) {
+  transition-delay: calc(2 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(4) {
+  transition-delay: calc(3 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(5) {
+  transition-delay: calc(4 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(6) {
+  transition-delay: calc(5 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(7) {
+  transition-delay: calc(6 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(8) {
+  transition-delay: calc(7 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(9) {
+  transition-delay: calc(8 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(10) {
+  transition-delay: calc(9 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(11) {
+  transition-delay: calc(10 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(12) {
+  transition-delay: calc(11 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(13) {
+  transition-delay: calc(12 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(14) {
+  transition-delay: calc(13 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(15) {
+  transition-delay: calc(14 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(16) {
+  transition-delay: calc(15 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(17) {
+  transition-delay: calc(16 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(18) {
+  transition-delay: calc(17 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(19) {
+  transition-delay: calc(18 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(20) {
+  transition-delay: calc(19 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(21) {
+  transition-delay: calc(20 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(22) {
+  transition-delay: calc(21 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(23) {
+  transition-delay: calc(22 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(24) {
+  transition-delay: calc(23 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(25) {
+  transition-delay: calc(24 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(26) {
+  transition-delay: calc(25 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(27) {
+  transition-delay: calc(26 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(28) {
+  transition-delay: calc(27 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger.ax-active > *:nth-child(29) {
+  transition-delay: calc(28 * var(--AwesomeCSSAnimationsStaggerDelay) * 1ms); }
+
+.ax-stagger-fade > * {
+  opacity: 0;
+  transition-property: opacity; }
+
+.ax-stagger-fade.ax-active > * {
+  opacity: 1; }

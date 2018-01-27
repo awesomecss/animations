@@ -1,0 +1,11 @@
+.ax-stagger-fade {
+  & > * {
+    opacity: 0;
+    transition-property: opacity;
+  }
+}
+.ax-stagger-fade.ax-active {
+  & > * {
+    opacity: 1;
+  }
+}
