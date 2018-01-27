@@ -7,7 +7,7 @@
     }
   }
 
-  @each $name, $value in $customCubicBezerValues {
+  @each $name, $value in $customCubicBezierValues {
     &-#{$name} {
       transition-timing-function: cubic-bezier(#{$value});
     }
@@ -21,7 +21,7 @@
     }
   }
 
-  @each $name, $value in $customCubicBezerValues {
+  @each $name, $value in $customCubicBezierValues {
     &-#{$name} > * {
       transition-timing-function: cubic-bezier(#{$value});
     }

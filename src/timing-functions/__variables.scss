@@ -11,7 +11,7 @@ $defaultTimingFunctions: (
 );
 
 // Custom Easing
-$customCubicBezerValues: (
+$customCubicBezierValues: (
   bounce: '0.680, -0.650, 0.265, 1.650',
   elastic: '0.680, -1.500, 0.265, 2.500',
 );
@@ -20,7 +20,7 @@ $customCubicBezerValues: (
 // Source:
 // http://easings.net/
 // Note: Disabled for now.
-// $customCubicBezerValues: (
+// $customCubicBezierValues: (
 //   easeInQuad: '0.550, 0.085, 0.680, 0.530',
 //   easeInCubic: '0.550, 0.055, 0.675, 0.190',
 //   easeInQuart: '0.895, 0.030, 0.685, 0.220',
