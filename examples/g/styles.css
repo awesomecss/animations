@@ -83,7 +83,7 @@ p {
   transform: translateY(calc(100% - 75px));
 }
 
-.MenuBottom.ax-active {
+.ax-active .MenuBottom {
   transform: translateY(calc(0% + 20px));
 }
 
@@ -99,12 +99,31 @@ p {
   border-radius: 3px;
   height: 40px;
 }
+.Search + .Search {
+  margin-top: 8px;
+}
+
+.SearchOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.SearchCard {
+  background: dodgerblue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 6;
+}
 
 .Overlay {
   background: rgba(0, 0, 0, 0.1);
   height: 100%;
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
 }
 

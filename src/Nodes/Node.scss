@@ -3,4 +3,5 @@
   transition-delay: var(--AwesomeCSSAnimationsTransitionDelay);
   transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
   transition-timing-function: ease;
+  will-change: opacity;
 }

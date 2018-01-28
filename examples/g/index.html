@@ -8,24 +8,33 @@
     <div class='AppFrameContainer'>
       <div class='AppFrame Card'>
         <div class='SearchContainer'>
-          <div class='Card Search'></div>
+          <div ax-click-trigger='SearchOverlay' class='Card Search' clickable></div>
         </div>
-        <div class='MenuBottom Card ax-Node ax-tf-ease' clickable>
-          <h3>CBS</h3>
-          <p>
-            Television Station &middot; 250 Front St W.
-          </p>
-          <div class='Details ax-NodeList ax-stagger ax-fade ax-up'>
-            <div ax-click-trigger='Popover'>Details</div>
-            <div ax-click-trigger='Popover'>Details</div>
-            <div ax-click-trigger='Popover'>Details</div>
-            <div ax-click-trigger='Popover'>Details</div>
-            <div ax-click-trigger='Popover'>Details</div>
+        <div id='SearchOverlay' class='SearchOverlay ax-Node ax-hydrate ax-fade'>
+          <div class='SearchCard Card ax-Node ax-downXl ax-tf-ease'>
+            <div ax-click-trigger='SearchOverlay' class='Card Search' clickable></div>
+            <div ax-click-trigger='SearchOverlay' class='Card Search' clickable></div>
           </div>
+          <div class='Overlay ax-Node ax-fade' clickable ax-click-trigger='SearchOverlay'></div>
         </div>
-        <div class='Overlay ax-Node ax-fade' clickable></div>
+        <div id='MenuBottomWrapper' class='MenuBottomWrapper ax-Node ax-hydrate'>
+          <div class='MenuBottom Card ax-Node ax-tf-ease' ax-click-trigger='MenuBottomWrapper' clickable>
+            <h3>CBS</h3>
+            <p>
+              Television Station &middot; 250 Front St W.
+            </p>
+            <div class='Details ax-NodeList ax-stagger ax-fade ax-up ax-tf-bounce'>
+              <div ax-click-trigger='Popover'>Details</div>
+              <div ax-click-trigger='Popover'>Details</div>
+              <div ax-click-trigger='Popover'>Details</div>
+              <div ax-click-trigger='Popover'>Details</div>
+              <div ax-click-trigger='Popover'>Details</div>
+            </div>
+          </div>
+          <div class='Overlay ax-Node ax-fade' clickable ax-click-trigger='MenuBottomWrapper'></div>
+        </div>
         <div id='Popover' class='Popover Card ax-Node ax-fade ax-up'>
-          <button class='Popover__close' onclick='closePopover()' clickable>Close</button>
+          <button class='Popover__close' clickable ax-click-trigger='Popover'>Close</button>
         </div>
       </div>
     </div>
@@ -45,22 +54,6 @@
           }
         })
       })
-
-      const MenuBottom = $('.MenuBottom')[0]
-      const Overlay = $('.Overlay')[0]
-      const Details = $('.Details')[0]
-      const toggleMenuNodes = () => {
-        MenuBottom.classList.toggle('ax-active')
-        Overlay.classList.toggle('ax-active')
-        Details.classList.toggle('ax-active')
-      }
-
-      MenuBottom.addEventListener('click', toggleMenuNodes)
-      Overlay.addEventListener('click', toggleMenuNodes)
-
-      const closePopover = () => {
-        $('#Popover')[0].classList.remove('ax-active')
-      }
     </script>
   </body>
 </html>
