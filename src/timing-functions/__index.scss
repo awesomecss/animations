@@ -3,8 +3,6 @@
 // Target node
 .ax-tf {
   @include renderTimingFunctions()
-}
-// Target's children nodes
-.ax-tf-children {
+  // Target's ChildNodes
   @include renderChildrenTimingFunctions()
 }

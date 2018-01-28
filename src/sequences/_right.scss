@@ -8,3 +8,20 @@
     transform: translateX(0px),
   )
 );
+// Variations
+@include renderAnimation(rightLg,
+  (
+    transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionLgValue) * -1)),
+  ),
+  (
+    transform: translateX(0px),
+  )
+);
+@include renderAnimation(rightXl,
+  (
+    transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionXlValue) * -1)),
+  ),
+  (
+    transform: translateX(0px),
+  )
+);

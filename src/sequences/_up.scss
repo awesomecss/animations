@@ -8,3 +8,20 @@
     transform: translateY(0px),
   )
 );
+// Variations
+@include renderAnimation(upLg,
+  (
+    transform: translateY(var(--AwesomeCSSAnimationsDirectionLgValue)),
+  ),
+  (
+    transform: translateY(0px),
+  )
+);
+@include renderAnimation(upXl,
+  (
+    transform: translateY(var(--AwesomeCSSAnimationsDirectionXlValue)),
+  ),
+  (
+    transform: translateY(0px),
+  )
+);

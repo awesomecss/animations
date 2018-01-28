@@ -5,14 +5,14 @@
 }
 
 @mixin renderAnimation ($name, $props, $nextProps) {
-  .ax-#{$name} {
+  .ax-Node.ax-#{$name} {
     @include renderAnimationProps ($props);
     &.ax-active {
       @include renderAnimationProps ($nextProps);
     }
   }
 
-  .ax-stagger-#{$name} {
+  .ax-NodeList.ax-#{$name} {
     & > * {
       @include renderAnimationProps ($props);
     }
