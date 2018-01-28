@@ -58,13 +58,17 @@
         </div>
 
         <div id='Popover' class='Popover Card ax-Node ax-fade ax-up'>
-          <button class='Popover__close' clickable ax-click-trigger='Popover'>Close</button>
-          <h1>Details</h1>
+          <div>
+            <button class='Popover__close' clickable ax-click-trigger='Popover'>Close</button>
+            <h1>Details</h1>
+          </div>
         </div>
 
-        <div id='Settings' class='Popover Settings Card ax-Node ax-fade ax-upXl ax-easeIn'>
-          <button class='Popover__close' clickable ax-click-trigger='Settings'>Close</button>
-          <h1>Settings</h1>
+        <div id='Settings' class='Popover Settings Card ax-Node ax-fade ax-upLg ax-easeIn'>
+          <div>
+            <button class='Popover__close' clickable ax-click-trigger='Settings'>Close</button>
+            <h1>Settings</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -80,7 +84,9 @@
           const id = event.target.getAttribute('ax-click-trigger')
           if (id) {
             const targetNode = $(`#${id}`)[0]
-            targetNode.classList.toggle('ax-active')
+            requestAnimationFrame(() => {
+              targetNode.classList.toggle('ax-active')
+            })
           }
         })
       })
