@@ -5,30 +5,15 @@
 }
 
 @mixin renderAnimation ($name, $props, $nextProps) {
-  .ax-Node.ax-#{$name} {
+  .ax-Node.ax-#{$name},
+  .ax-NodeList.ax-#{$name} > * {
     @include renderAnimationProps ($props);
-    &.ax-active {
-      @include renderAnimationProps ($nextProps);
-    }
   }
 
-  .ax-NodeList.ax-#{$name} {
-    & > * {
-      @include renderAnimationProps ($props);
-    }
-    &.ax-active > * {
-      @include renderAnimationProps ($nextProps);
-    }
-  }
-
-  .ax-hydrate.ax-active {
-    .ax-Node.ax-#{$name} {
-      @include renderAnimationProps ($nextProps);
-    }
-    .ax-NodeList.ax-#{$name} {
-      & > * {
-        @include renderAnimationProps ($nextProps);
-      }
-    }
+  .ax-Node.ax-#{$name}.ax-active,
+  .ax-NodeList.ax-#{$name}.ax-active > *,
+  .ax-hydrate.ax-active .ax-Node.ax-#{$name},
+  .ax-hydrate.ax-active .ax-NodeList.ax-#{$name} > * {
+    @include renderAnimationProps ($nextProps);
   }
 }

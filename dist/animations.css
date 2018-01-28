@@ -209,18 +209,38 @@
 .ax-tf-elastic > * {
   transition-timing-function: cubic-bezier(0.680, -1.500, 0.265, 2.500); }
 
-.tx-dly {
-  transition-delay: calc( ( -1 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 0 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 1 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 2 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 3 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 4 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 5 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 6 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 7 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
-  transition-delay: calc( ( 8 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important;
+.tx-dly-0 {
+  transition-delay: calc( ( 0 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-1 {
+  transition-delay: calc( ( 1 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-2 {
+  transition-delay: calc( ( 2 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-3 {
+  transition-delay: calc( ( 3 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-4 {
+  transition-delay: calc( ( 4 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-5 {
+  transition-delay: calc( ( 5 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-6 {
+  transition-delay: calc( ( 6 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-7 {
+  transition-delay: calc( ( 7 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-8 {
+  transition-delay: calc( ( 8 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-9 {
   transition-delay: calc( ( 9 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+
+.tx-dly-10 {
+  transition-delay: calc( ( 10 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
 
 .ax-collapse {
   max-height: 0;
@@ -235,282 +255,165 @@
   .ax-collapse--lg.ax-active {
     max-height: var(--AwesomeCSSAnimationsCollapseLgMaxHeight); }
 
-.ax-Node.ax-down {
-  transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
-  .ax-Node.ax-down.ax-active {
-    transform: translateY(0px); }
-
+.ax-Node.ax-down,
 .ax-NodeList.ax-down > * {
   transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
 
-.ax-NodeList.ax-down.ax-active > * {
-  transform: translateY(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-down {
-  transform: translateY(0px); }
-
+.ax-Node.ax-down.ax-active,
+.ax-NodeList.ax-down.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-down,
 .ax-hydrate.ax-active .ax-NodeList.ax-down > * {
   transform: translateY(0px); }
 
-.ax-Node.ax-downLg {
-  transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionLgValue) * -1)); }
-  .ax-Node.ax-downLg.ax-active {
-    transform: translateY(0px); }
-
+.ax-Node.ax-downLg,
 .ax-NodeList.ax-downLg > * {
   transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionLgValue) * -1)); }
 
-.ax-NodeList.ax-downLg.ax-active > * {
-  transform: translateY(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-downLg {
-  transform: translateY(0px); }
-
+.ax-Node.ax-downLg.ax-active,
+.ax-NodeList.ax-downLg.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-downLg,
 .ax-hydrate.ax-active .ax-NodeList.ax-downLg > * {
   transform: translateY(0px); }
 
-.ax-Node.ax-downXl {
-  transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionXlValue) * -1)); }
-  .ax-Node.ax-downXl.ax-active {
-    transform: translateY(0px); }
-
+.ax-Node.ax-downXl,
 .ax-NodeList.ax-downXl > * {
   transform: translateY(calc(var(--AwesomeCSSAnimationsDirectionXlValue) * -1)); }
 
-.ax-NodeList.ax-downXl.ax-active > * {
-  transform: translateY(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-downXl {
-  transform: translateY(0px); }
-
+.ax-Node.ax-downXl.ax-active,
+.ax-NodeList.ax-downXl.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-downXl,
 .ax-hydrate.ax-active .ax-NodeList.ax-downXl > * {
   transform: translateY(0px); }
 
-.ax-Node.ax-fade {
-  opacity: 0;
-  pointer-events: none;
-  will-change: opacity; }
-  .ax-Node.ax-fade.ax-active {
-    opacity: 1;
-    pointer-events: auto; }
-
+.ax-Node.ax-fade,
 .ax-NodeList.ax-fade > * {
   opacity: 0;
   pointer-events: none;
   will-change: opacity; }
 
-.ax-NodeList.ax-fade.ax-active > * {
-  opacity: 1;
-  pointer-events: auto; }
-
-.ax-hydrate.ax-active .ax-Node.ax-fade {
-  opacity: 1;
-  pointer-events: auto; }
-
+.ax-Node.ax-fade.ax-active,
+.ax-NodeList.ax-fade.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-fade,
 .ax-hydrate.ax-active .ax-NodeList.ax-fade > * {
   opacity: 1;
   pointer-events: auto; }
 
-.ax-Node.ax-left {
-  transform: translateX(var(--AwesomeCSSAnimationsDirectionValue)); }
-  .ax-Node.ax-left.ax-active {
-    transform: translateX(0px); }
-
+.ax-Node.ax-left,
 .ax-NodeList.ax-left > * {
   transform: translateX(var(--AwesomeCSSAnimationsDirectionValue)); }
 
-.ax-NodeList.ax-left.ax-active > * {
-  transform: translateX(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-left {
-  transform: translateX(0px); }
-
+.ax-Node.ax-left.ax-active,
+.ax-NodeList.ax-left.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-left,
 .ax-hydrate.ax-active .ax-NodeList.ax-left > * {
   transform: translateX(0px); }
 
-.ax-Node.ax-leftLg {
-  transform: translateX(var(--AwesomeCSSAnimationsDirectionLgValue)); }
-  .ax-Node.ax-leftLg.ax-active {
-    transform: translateX(0px); }
-
+.ax-Node.ax-leftLg,
 .ax-NodeList.ax-leftLg > * {
   transform: translateX(var(--AwesomeCSSAnimationsDirectionLgValue)); }
 
-.ax-NodeList.ax-leftLg.ax-active > * {
-  transform: translateX(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-leftLg {
-  transform: translateX(0px); }
-
+.ax-Node.ax-leftLg.ax-active,
+.ax-NodeList.ax-leftLg.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-leftLg,
 .ax-hydrate.ax-active .ax-NodeList.ax-leftLg > * {
   transform: translateX(0px); }
 
-.ax-Node.ax-leftXl {
-  transform: translateX(var(--AwesomeCSSAnimationsDirectionXlValue)); }
-  .ax-Node.ax-leftXl.ax-active {
-    transform: translateX(0px); }
-
+.ax-Node.ax-leftXl,
 .ax-NodeList.ax-leftXl > * {
   transform: translateX(var(--AwesomeCSSAnimationsDirectionXlValue)); }
 
-.ax-NodeList.ax-leftXl.ax-active > * {
-  transform: translateX(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-leftXl {
-  transform: translateX(0px); }
-
+.ax-Node.ax-leftXl.ax-active,
+.ax-NodeList.ax-leftXl.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-leftXl,
 .ax-hydrate.ax-active .ax-NodeList.ax-leftXl > * {
   transform: translateX(0px); }
 
-.ax-Node.ax-right {
-  transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
-  .ax-Node.ax-right.ax-active {
-    transform: translateX(0px); }
-
+.ax-Node.ax-right,
 .ax-NodeList.ax-right > * {
   transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionValue) * -1)); }
 
-.ax-NodeList.ax-right.ax-active > * {
-  transform: translateX(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-right {
-  transform: translateX(0px); }
-
+.ax-Node.ax-right.ax-active,
+.ax-NodeList.ax-right.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-right,
 .ax-hydrate.ax-active .ax-NodeList.ax-right > * {
   transform: translateX(0px); }
 
-.ax-Node.ax-rightLg {
-  transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionLgValue) * -1)); }
-  .ax-Node.ax-rightLg.ax-active {
-    transform: translateX(0px); }
-
+.ax-Node.ax-rightLg,
 .ax-NodeList.ax-rightLg > * {
   transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionLgValue) * -1)); }
 
-.ax-NodeList.ax-rightLg.ax-active > * {
-  transform: translateX(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-rightLg {
-  transform: translateX(0px); }
-
+.ax-Node.ax-rightLg.ax-active,
+.ax-NodeList.ax-rightLg.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-rightLg,
 .ax-hydrate.ax-active .ax-NodeList.ax-rightLg > * {
   transform: translateX(0px); }
 
-.ax-Node.ax-rightXl {
-  transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionXlValue) * -1)); }
-  .ax-Node.ax-rightXl.ax-active {
-    transform: translateX(0px); }
-
+.ax-Node.ax-rightXl,
 .ax-NodeList.ax-rightXl > * {
   transform: translateX(calc(var(--AwesomeCSSAnimationsDirectionXlValue) * -1)); }
 
-.ax-NodeList.ax-rightXl.ax-active > * {
-  transform: translateX(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-rightXl {
-  transform: translateX(0px); }
-
+.ax-Node.ax-rightXl.ax-active,
+.ax-NodeList.ax-rightXl.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-rightXl,
 .ax-hydrate.ax-active .ax-NodeList.ax-rightXl > * {
   transform: translateX(0px); }
 
-.ax-Node.ax-scale {
-  transform: scale(var(--AwesomeCSSAnimationsScaleValue)); }
-  .ax-Node.ax-scale.ax-active {
-    transform: scale(1); }
-
+.ax-Node.ax-scale,
 .ax-NodeList.ax-scale > * {
   transform: scale(var(--AwesomeCSSAnimationsScaleValue)); }
 
-.ax-NodeList.ax-scale.ax-active > * {
-  transform: scale(1); }
-
-.ax-hydrate.ax-active .ax-Node.ax-scale {
-  transform: scale(1); }
-
+.ax-Node.ax-scale.ax-active,
+.ax-NodeList.ax-scale.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-scale,
 .ax-hydrate.ax-active .ax-NodeList.ax-scale > * {
   transform: scale(1); }
 
-.ax-Node.ax-scaleLg {
-  transform: scale(var(--AwesomeCSSAnimationsScaleLgValue)); }
-  .ax-Node.ax-scaleLg.ax-active {
-    transform: scale(1); }
-
+.ax-Node.ax-scaleLg,
 .ax-NodeList.ax-scaleLg > * {
   transform: scale(var(--AwesomeCSSAnimationsScaleLgValue)); }
 
-.ax-NodeList.ax-scaleLg.ax-active > * {
-  transform: scale(1); }
-
-.ax-hydrate.ax-active .ax-Node.ax-scaleLg {
-  transform: scale(1); }
-
+.ax-Node.ax-scaleLg.ax-active,
+.ax-NodeList.ax-scaleLg.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-scaleLg,
 .ax-hydrate.ax-active .ax-NodeList.ax-scaleLg > * {
   transform: scale(1); }
 
-.ax-Node.ax-scaleXl {
-  transform: scale(var(--AwesomeCSSAnimationsScaleXlValue)); }
-  .ax-Node.ax-scaleXl.ax-active {
-    transform: scale(1); }
-
+.ax-Node.ax-scaleXl,
 .ax-NodeList.ax-scaleXl > * {
   transform: scale(var(--AwesomeCSSAnimationsScaleXlValue)); }
 
-.ax-NodeList.ax-scaleXl.ax-active > * {
-  transform: scale(1); }
-
-.ax-hydrate.ax-active .ax-Node.ax-scaleXl {
-  transform: scale(1); }
-
+.ax-Node.ax-scaleXl.ax-active,
+.ax-NodeList.ax-scaleXl.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-scaleXl,
 .ax-hydrate.ax-active .ax-NodeList.ax-scaleXl > * {
   transform: scale(1); }
 
-.ax-Node.ax-up {
-  transform: translateY(var(--AwesomeCSSAnimationsDirectionValue)); }
-  .ax-Node.ax-up.ax-active {
-    transform: translateY(0px); }
-
+.ax-Node.ax-up,
 .ax-NodeList.ax-up > * {
   transform: translateY(var(--AwesomeCSSAnimationsDirectionValue)); }
 
-.ax-NodeList.ax-up.ax-active > * {
-  transform: translateY(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-up {
-  transform: translateY(0px); }
-
+.ax-Node.ax-up.ax-active,
+.ax-NodeList.ax-up.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-up,
 .ax-hydrate.ax-active .ax-NodeList.ax-up > * {
   transform: translateY(0px); }
 
-.ax-Node.ax-upLg {
-  transform: translateY(var(--AwesomeCSSAnimationsDirectionLgValue)); }
-  .ax-Node.ax-upLg.ax-active {
-    transform: translateY(0px); }
-
+.ax-Node.ax-upLg,
 .ax-NodeList.ax-upLg > * {
   transform: translateY(var(--AwesomeCSSAnimationsDirectionLgValue)); }
 
-.ax-NodeList.ax-upLg.ax-active > * {
-  transform: translateY(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-upLg {
-  transform: translateY(0px); }
-
+.ax-Node.ax-upLg.ax-active,
+.ax-NodeList.ax-upLg.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-upLg,
 .ax-hydrate.ax-active .ax-NodeList.ax-upLg > * {
   transform: translateY(0px); }
 
-.ax-Node.ax-upXl {
-  transform: translateY(var(--AwesomeCSSAnimationsDirectionXlValue)); }
-  .ax-Node.ax-upXl.ax-active {
-    transform: translateY(0px); }
-
+.ax-Node.ax-upXl,
 .ax-NodeList.ax-upXl > * {
   transform: translateY(var(--AwesomeCSSAnimationsDirectionXlValue)); }
 
-.ax-NodeList.ax-upXl.ax-active > * {
-  transform: translateY(0px); }
-
-.ax-hydrate.ax-active .ax-Node.ax-upXl {
-  transform: translateY(0px); }
-
+.ax-Node.ax-upXl.ax-active,
+.ax-NodeList.ax-upXl.ax-active > *,
+.ax-hydrate.ax-active .ax-Node.ax-upXl,
 .ax-hydrate.ax-active .ax-NodeList.ax-upXl > * {
   transform: translateY(0px); }
