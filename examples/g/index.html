@@ -3,20 +3,43 @@
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link rel='stylesheet' href='../../dist/animations.css'>
-  </head>
+  </head
   <body>
     <div class='AppFrameContainer'>
       <div class='AppFrame Card'>
-        <div class='SearchContainer'>
-          <div ax-click-trigger='SearchOverlay' class='Card Search' clickable></div>
+
+        <div id='Sidebar' class='Sidebar ax-Node ax-fade ax-hydrate'>
+          <div class='SidebarMenu Card ax-Node ax-rightXl'>
+            <div class='SidebarMenuHeader'></div>
+            <div class='SidebarMenuDetails ax-NodeList ax-stagger ax-fade'>
+              <div ax-click-trigger='Sidebar' clickable>Details</div>
+              <div ax-click-trigger='Sidebar' clickable>Details</div>
+              <div ax-click-trigger='Sidebar' clickable>Details</div>
+              <div ax-click-trigger='Sidebar' clickable>Details</div>
+              <div ax-click-trigger='Sidebar' clickable>Details</div>
+              <hr>
+              <div ax-click-trigger='Settings' clickable>Settings</div>
+            </div>
+          </div>
+          <div class='Overlay ax-Node ax-fade' clickable ax-click-trigger='Sidebar'></div>
         </div>
+
+        <div class='SearchContainer'>
+          <div ax-click-trigger='SearchOverlay' class='Card Search' clickable>
+            <span ax-click-trigger='Sidebar' class='Icon' clickable>
+              &#9776;
+            </span>
+          </div>
+        </div>
+
         <div id='SearchOverlay' class='SearchOverlay ax-Node ax-hydrate ax-fade'>
-          <div class='SearchCard Card ax-Node ax-downXl ax-tf-ease'>
+          <div class='SearchCard Card ax-NodeList ax-stagger ax-upXl ax-tf-ease'>
             <div ax-click-trigger='SearchOverlay' class='Card Search' clickable></div>
             <div ax-click-trigger='SearchOverlay' class='Card Search' clickable></div>
           </div>
           <div class='Overlay ax-Node ax-fade' clickable ax-click-trigger='SearchOverlay'></div>
         </div>
+
         <div id='MenuBottomWrapper' class='MenuBottomWrapper ax-Node ax-hydrate'>
           <div class='MenuBottom Card ax-Node ax-tf-ease' ax-click-trigger='MenuBottomWrapper' clickable>
             <h3 ax-click-trigger='MenuBottomWrapper'>CBS</h3>
@@ -24,17 +47,24 @@
               Television Station &middot; 250 Front St W.
             </p>
             <div class='Details ax-NodeList ax-stagger ax-fade ax-up ax-tf-bounce'>
-              <div ax-click-trigger='Popover'>Details</div>
-              <div ax-click-trigger='Popover'>Details</div>
-              <div ax-click-trigger='Popover'>Details</div>
-              <div ax-click-trigger='Popover'>Details</div>
-              <div ax-click-trigger='Popover'>Details</div>
+              <div ax-click-trigger='Popover' clickable>Details</div>
+              <div ax-click-trigger='Popover' clickable>Details</div>
+              <div ax-click-trigger='Popover' clickable>Details</div>
+              <div ax-click-trigger='Popover' clickable>Details</div>
+              <div ax-click-trigger='Popover' clickable>Details</div>
             </div>
           </div>
           <div class='Overlay ax-Node ax-fade' clickable ax-click-trigger='MenuBottomWrapper'></div>
         </div>
+
         <div id='Popover' class='Popover Card ax-Node ax-fade ax-up'>
           <button class='Popover__close' clickable ax-click-trigger='Popover'>Close</button>
+          <h1>Details</h1>
+        </div>
+
+        <div id='Settings' class='Popover Settings Card ax-Node ax-fade ax-upXl ax-easeIn'>
+          <button class='Popover__close' clickable ax-click-trigger='Settings'>Close</button>
+          <h1>Settings</h1>
         </div>
       </div>
     </div>

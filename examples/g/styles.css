@@ -94,6 +94,7 @@ p {
 .Search {
   border-radius: 3px;
   height: 40px;
+  padding: 0 4px;
 }
 .Search + .Search {
   margin-top: 8px;
@@ -137,4 +138,49 @@ p {
 
 .Popover__close {
   float: right;
+}
+
+.Icon {
+  display: inline-block;
+  padding: 8px;
+}
+
+.Sidebar {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 7;
+}
+
+.SidebarMenu {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  left: 0;
+  max-width: 240px;
+  padding: 0;
+  position: absolute;
+  width: 80%;
+  z-index: 7;
+}
+
+.SidebarMenuHeader {
+  background: dodgerblue;
+  height: 100px;
+}
+
+.SidebarMenuDetails {
+  padding: 12px;
+}
+.SidebarMenuDetails > * {
+  margin: 4px 0;
+}
+
+.Settings {
+  z-index: 10;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
 }
