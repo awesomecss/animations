@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #444;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.4rem;
+  background: #ccc;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.AppFrameContainer {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.Card {
+  background: white;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.AppFrame {
+  background: #eee;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  height: 480px;
+  margin: auto;
+  max-width: 320px;
+  padding: 0;
+  position: relative;;
+  width: 320px;
+}
+
+[clickable] {
+  cursor: pointer;
+}
+
+.MenuBottom {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  padding-bottom: 20px;
+  position: absolute;
+  height: 240px;
+  z-index: 3;
+  transform: translateY(calc(100% - 82px));
+  will-change: transform;
+}
+.MenuBottom:active {
+  transform: translateY(calc(100% - 75px));
+}
+
+.MenuBottom.ax-active {
+  transform: translateY(calc(0% + 20px));
+}
+
+.SearchContainer {
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.Search {
+  border-radius: 3px;
+  height: 40px;
+}
+
+.Overlay {
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.Popover {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  z-index: 4;
+}
+
+.Details > * {
+  margin: 4px 0;
+}
+
+.Popover__close {
+  float: right;
+}

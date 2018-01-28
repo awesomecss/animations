@@ -223,14 +223,16 @@
 
 .ax-Node.ax-fade {
   opacity: 0;
-  pointer-events: none; }
+  pointer-events: none;
+  will-change: opacity; }
   .ax-Node.ax-fade.ax-active {
     opacity: 1;
     pointer-events: auto; }
 
 .ax-NodeList.ax-fade > * {
   opacity: 0;
-  pointer-events: none; }
+  pointer-events: none;
+  will-change: opacity; }
 
 .ax-NodeList.ax-fade.ax-active > * {
   opacity: 1;

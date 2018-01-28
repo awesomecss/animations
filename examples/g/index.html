@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel='stylesheet' href='../../dist/animations.css'>
+  </head>
+  <body>
+    <div class='AppFrameContainer'>
+      <div class='AppFrame Card'>
+        <div class='SearchContainer'>
+          <div class='Card Search'></div>
+        </div>
+        <div class='MenuBottom Card ax-Node ax-tf-ease' clickable>
+          <h3>CBS</h3>
+          <p>
+            Television Station &middot; 250 Front St W.
+          </p>
+          <div class='Details ax-NodeList ax-stagger ax-fade ax-up'>
+            <div ax-click-trigger='Popover'>Details</div>
+            <div ax-click-trigger='Popover'>Details</div>
+            <div ax-click-trigger='Popover'>Details</div>
+            <div ax-click-trigger='Popover'>Details</div>
+            <div ax-click-trigger='Popover'>Details</div>
+          </div>
+        </div>
+        <div class='Overlay ax-Node ax-fade' clickable></div>
+        <div id='Popover' class='Popover Card ax-Node ax-fade ax-up'>
+          <button class='Popover__close' onclick='closePopover()' clickable>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Tiny bit of JS, just to get the triggers working :D
+      const $ = (selector) => document.querySelectorAll(selector)
+      const clickTriggerNodes = $('[ax-click-trigger]')
+
+      clickTriggerNodes.forEach(n => {
+        n.addEventListener('click', (event) => {
+          event.stopPropagation();
+          const id = event.target.getAttribute('ax-click-trigger')
+          if (id) {
+            const targetNode = $(`#${id}`)[0]
+            targetNode.classList.toggle('ax-active')
+          }
+        })
+      })
+
+      const MenuBottom = $('.MenuBottom')[0]
+      const Overlay = $('.Overlay')[0]
+      const Details = $('.Details')[0]
+      const toggleMenuNodes = () => {
+        MenuBottom.classList.toggle('ax-active')
+        Overlay.classList.toggle('ax-active')
+        Details.classList.toggle('ax-active')
+      }
+
+      MenuBottom.addEventListener('click', toggleMenuNodes)
+      Overlay.addEventListener('click', toggleMenuNodes)
+
+      const closePopover = () => {
+        $('#Popover')[0].classList.remove('ax-active')
+      }
+    </script>
+  </body>
+</html>
