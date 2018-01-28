@@ -79,10 +79,6 @@ p {
   transform: translateY(calc(100% - 82px));
   will-change: transform;
 }
-.MenuBottom:active {
-  transform: translateY(calc(100% - 75px));
-}
-
 .ax-active .MenuBottom {
   transform: translateY(calc(0% + 20px));
 }
