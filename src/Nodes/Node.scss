@@ -1,5 +1,6 @@
 .ax-Node {
   transition-property: all;
+  transition-delay: var(--AwesomeCSSAnimationsTransitionDelay);
   transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
   transition-timing-function: ease;
 }

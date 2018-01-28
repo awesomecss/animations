@@ -22,7 +22,7 @@ body {
 }
 
 .ax-NodeList {
-  width: 300px;
+  max-width: 300px;
 }
 
 .ax-Node,

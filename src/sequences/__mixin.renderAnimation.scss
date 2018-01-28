@@ -20,4 +20,15 @@
       @include renderAnimationProps ($nextProps);
     }
   }
+
+  .ax-hydrate.ax-active {
+    .ax-Node.ax-#{$name} {
+      @include renderAnimationProps ($nextProps);
+    }
+    .ax-NodeList.ax-#{$name} {
+      & > * {
+        @include renderAnimationProps ($nextProps);
+      }
+    }
+  }
 }

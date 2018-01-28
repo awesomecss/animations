@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="../dist/animations.css">
+  </head
+  <body>
+    <p>
+      hydrate: animation is triggered for all nested child ax-Node/ax-NodeList<br />
+      <button onclick="toggleActiveClassName(event)">Toggle: Active</button>
+    </p>
+    <div class="ax-hydrate" data-ax-target>
+      <div class="ax-NodeList ax-stagger ax-fade ax-down ax-tf-bounce">
+        <div>Element</div>
+        <div>Element</div>
+      </div>
+      <div class="ax-NodeList ax-stagger ax-fade ax-down ax-tf-bounce">
+        <div>Element</div>
+        <div>Element</div>
+        <div class="ax-NodeList ax-stagger ax-fade ax-left">
+          <div>Element</div>
+          <div>Element</div>
+          <div>Element</div>
+          <div class="ax-NodeList ax-stagger ax-fade ax-up ax-tf-bounce">
+            <div>Element</div>
+            <div>Element</div>
+          </div>
+          <div>Element</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Tiny bit of JS, just to active the stagger (by adding the active class)
+      const targetNode = document.querySelectorAll('[data-ax-target]')
+      const toggleActiveClassName = (event) => {
+        const node = event.target.parentNode.nextElementSibling
+        node.classList.toggle('ax-active')
+      }
+      const animateOnLoad = () => {
+        targetNode.forEach(n => n.classList.toggle('ax-active'))
+      }
+      setTimeout(animateOnLoad, 200)
+    </script>
+  </body>
+</html>
