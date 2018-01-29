@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -61,8 +62,18 @@ p {
   margin: auto;
   max-width: 320px;
   padding: 0;
-  position: relative;;
+  position: relative;
   width: 320px;
+}
+
+@media (max-width: 480px) {
+  .AppFrame {
+    border-radius: 0;
+    border: none;
+    height: 100vh;
+    max-width: 100%;
+    width: 100vh;
+  }
 }
 
 [clickable] {
