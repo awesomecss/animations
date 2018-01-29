@@ -70,9 +70,9 @@ p {
   .AppFrame {
     border-radius: 0;
     border: none;
-    height: 100vh;
+    height: 100%;
     max-width: 100%;
-    width: 100vh;
+    width: 100%;
   }
 }
 
