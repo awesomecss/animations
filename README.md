@@ -15,7 +15,7 @@
 The quickest and easiest way to start include the CDN hosted file in the `<head>` of your html file.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@awesomecss/animations@0.1.0/dist/animations.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@awesomecss/animations@0.1.1/dist/animations.min.css" />
 ```
 
 
