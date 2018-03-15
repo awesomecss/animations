@@ -2,18 +2,18 @@
   max-height: 0;
   overflow-y: hidden;
   pointer-events: none;
-  transition-duration: var(--AwesomeCSSAnimationsTransitionDuration);
+  transition-duration: var(--AwesCSSAnimDuration);
   will-change: height;
 
   &.ax-active {
-    max-height: var(--AwesomeCSSAnimationsCollapseMaxHeight);
+    max-height: var(--AwesCSSAnimCollapseMaxHeight);
     pointer-events: auto;
-    transition-duration: calc(var(--AwesomeCSSAnimationsTransitionDuration) * 2);
+    transition-duration: calc(var(--AwesCSSAnimDuration) * 2);
   }
 
   &--lg {
     &.ax-active {
-      max-height: var(--AwesomeCSSAnimationsCollapseLgMaxHeight);
+      max-height: var(--AwesCSSAnimCollapseLgMaxHeight);
     }
   }
 }

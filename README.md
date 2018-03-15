@@ -2,7 +2,7 @@
 
 > A functional CSS animation library designed for UI interactions.
 
-* **Tiny** at around 8KB minified (1.3KB GZipped!)
+* **Tiny** at around 7KB minified (1.2KB GZipped!)
 * **Zero** dependencies
 * **Performant** with stable 60FPS buttery smooth animations
 * **Works** with basically anything that can render HTML/CSS 🙌
@@ -15,7 +15,7 @@
 The quickest and easiest way to start include the CDN hosted file in the `<head>` of your html file.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@awesomecss/animations@0.0.3/dist/animations.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/@awesomecss/animations@0.1.0/dist/animations.min.css" />
 ```
 
 

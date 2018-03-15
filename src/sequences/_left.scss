@@ -2,7 +2,7 @@
 
 @include renderAnimation(left,
   (
-    transform: translateX(var(--AwesomeCSSAnimationsDirectionValue)),
+    transform: translateX(var(--AwesCSSAnimDirValue)),
   ),
   (
     transform: translateX(0px),
@@ -11,7 +11,7 @@
 // Variations
 @include renderAnimation(leftLg,
   (
-    transform: translateX(var(--AwesomeCSSAnimationsDirectionLgValue)),
+    transform: translateX(var(--AwesCSSAnimDirLgValue)),
   ),
   (
     transform: translateX(0px),
@@ -19,7 +19,7 @@
 );
 @include renderAnimation(leftXl,
   (
-    transform: translateX(var(--AwesomeCSSAnimationsDirectionXlValue)),
+    transform: translateX(var(--AwesCSSAnimDirXlValue)),
   ),
   (
     transform: translateX(0px),

@@ -2,7 +2,7 @@
 
 @include renderAnimation(scale,
   (
-    transform: scale(var(--AwesomeCSSAnimationsScaleValue)),
+    transform: scale(var(--AwesCSSAnimScaleValue)),
   ),
   (
     transform: scale(1),
@@ -11,7 +11,7 @@
 // Variations
 @include renderAnimation(scaleLg,
   (
-    transform: scale(var(--AwesomeCSSAnimationsScaleLgValue)),
+    transform: scale(var(--AwesCSSAnimScaleLgValue)),
   ),
   (
     transform: scale(1),
@@ -19,7 +19,7 @@
 );
 @include renderAnimation(scaleXl,
   (
-    transform: scale(var(--AwesomeCSSAnimationsScaleXlValue)),
+    transform: scale(var(--AwesCSSAnimScaleXlValue)),
   ),
   (
     transform: scale(1),

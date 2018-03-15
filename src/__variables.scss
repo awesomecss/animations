@@ -1,16 +1,16 @@
 :root {
   // General:
-  --AwesomeCSSAnimationsTransitionDelay: 0;
-  --AwesomeCSSAnimationsTransitionDuration: 300ms;
-  --AwesomeCSSAnimationsStaggerDelay: 60;
+  --AwesCSSAnimDelay: 0;
+  --AwesCSSAnimDuration: 300ms;
+  --AwesCSSAnimStaggerDelay: 60;
 
   // Sequences:
-  --AwesomeCSSAnimationsCollapseMaxHeight: 100vh;
-  --AwesomeCSSAnimationsCollapseLgMaxHeight: 100em;
-  --AwesomeCSSAnimationsDirectionValue: 20px;
-  --AwesomeCSSAnimationsDirectionLgValue: 20%;
-  --AwesomeCSSAnimationsDirectionXlValue: 50%;
-  --AwesomeCSSAnimationsScaleValue: 0.8;
-  --AwesomeCSSAnimationsScaleLgValue: 0.5;
-  --AwesomeCSSAnimationsScaleXlValue: 0.3;
+  --AwesCSSAnimCollapseMaxHeight: 100vh;
+  --AwesCSSAnimCollapseLgMaxHeight: 100em;
+  --AwesCSSAnimDirValue: 20px;
+  --AwesCSSAnimDirLgValue: 20%;
+  --AwesCSSAnimDirXlValue: 50%;
+  --AwesCSSAnimScaleValue: 0.8;
+  --AwesCSSAnimScaleLgValue: 0.5;
+  --AwesCSSAnimScaleXlValue: 0.3;
 }

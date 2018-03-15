@@ -12,8 +12,8 @@
 
   .ax-Node.ax-#{$name}.ax-active,
   .ax-NodeList.ax-#{$name}.ax-active > *,
-  .ax-hydrate.ax-active .ax-Node.ax-#{$name},
-  .ax-hydrate.ax-active .ax-NodeList.ax-#{$name} > * {
+  .ax-hydrate.ax-active .ax-#{$name},
+  .ax-hydrate.ax-active .ax-#{$name} > * {
     @include renderAnimationProps ($nextProps);
   }
 }
