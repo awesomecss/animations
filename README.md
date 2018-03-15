@@ -1,6 +1,6 @@
 # Animations :sparkles:
 
-A functional CSS animation library designed for UI interactions.
+> A functional CSS animation library designed for UI interactions.
 
 * **Tiny** at around 8KB minified (1.3KB GZipped!)
 * **Zero** dependencies
