@@ -29,125 +29,56 @@
   transition-timing-function: ease;
   will-change: opacity; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(1),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(1) {
-  transition-delay: calc( ( 0 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > * {
+  transition-delay: calc( ( var(--nIndex) * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(2),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(2) {
-  transition-delay: calc( ( 1 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(1) {
+  --nIndex: 0; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(3),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(3) {
-  transition-delay: calc( ( 2 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(2) {
+  --nIndex: 1; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(4),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(4) {
-  transition-delay: calc( ( 3 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(3) {
+  --nIndex: 2; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(5),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(5) {
-  transition-delay: calc( ( 4 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(4) {
+  --nIndex: 3; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(6),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(6) {
-  transition-delay: calc( ( 5 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(5) {
+  --nIndex: 4; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(7),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(7) {
-  transition-delay: calc( ( 6 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(6) {
+  --nIndex: 5; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(8),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(8) {
-  transition-delay: calc( ( 7 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(7) {
+  --nIndex: 6; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(9),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(9) {
-  transition-delay: calc( ( 8 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(8) {
+  --nIndex: 7; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(10),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(10) {
-  transition-delay: calc( ( 9 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(9) {
+  --nIndex: 8; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(11),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(11) {
-  transition-delay: calc( ( 10 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(10) {
+  --nIndex: 9; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(12),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(12) {
-  transition-delay: calc( ( 11 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(11) {
+  --nIndex: 10; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(13),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(13) {
-  transition-delay: calc( ( 12 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(12) {
+  --nIndex: 11; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(14),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(14) {
-  transition-delay: calc( ( 13 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(13) {
+  --nIndex: 12; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(15),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(15) {
-  transition-delay: calc( ( 14 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(14) {
+  --nIndex: 13; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(16),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(16) {
-  transition-delay: calc( ( 15 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(15) {
+  --nIndex: 14; }
 
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(17),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(17) {
-  transition-delay: calc( ( 16 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(18),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(18) {
-  transition-delay: calc( ( 17 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(19),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(19) {
-  transition-delay: calc( ( 18 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(20),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(20) {
-  transition-delay: calc( ( 19 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(21),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(21) {
-  transition-delay: calc( ( 20 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(22),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(22) {
-  transition-delay: calc( ( 21 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(23),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(23) {
-  transition-delay: calc( ( 22 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(24),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(24) {
-  transition-delay: calc( ( 23 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(25),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(25) {
-  transition-delay: calc( ( 24 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(26),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(26) {
-  transition-delay: calc( ( 25 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(27),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(27) {
-  transition-delay: calc( ( 26 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(28),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(28) {
-  transition-delay: calc( ( 27 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(29),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(29) {
-  transition-delay: calc( ( 28 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
-
-.ax-NodeList.ax-stagger.ax-active > *:nth-child(30),
-.ax-hydrate.ax-active .ax-NodeList.ax-stagger > *:nth-child(30) {
-  transition-delay: calc( ( 29 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms); }
+.ax-NodeList.ax-stagger > *:nth-child(n+15) {
+  --nIndex: 14; }
 
 .ax-tf-ease {
   transition-timing-function: ease; }
@@ -209,38 +140,30 @@
 .ax-tf-elastic > * {
   transition-timing-function: cubic-bezier(0.680, -1.500, 0.265, 2.500); }
 
-.ax-dly-0 {
-  transition-delay: calc( ( 0 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-1 {
-  transition-delay: calc( ( 1 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-2 {
-  transition-delay: calc( ( 2 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-3 {
-  transition-delay: calc( ( 3 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-4 {
-  transition-delay: calc( ( 4 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-5 {
-  transition-delay: calc( ( 5 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-6 {
-  transition-delay: calc( ( 6 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-7 {
-  transition-delay: calc( ( 7 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-8 {
-  transition-delay: calc( ( 8 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-9 {
-  transition-delay: calc( ( 9 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
-
-.ax-dly-10 {
-  transition-delay: calc( ( 10 * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+.ax-dly {
+  transition-delay: calc( ( var(--axDlyIndex) * var(--AwesomeCSSAnimationsStaggerDelay) + var(--AwesomeCSSAnimationsTransitionDelay) ) * 1ms) !important; }
+  .ax-dly-0 {
+    --axDlyIndex: -1; }
+  .ax-dly-1 {
+    --axDlyIndex: 0; }
+  .ax-dly-2 {
+    --axDlyIndex: 1; }
+  .ax-dly-3 {
+    --axDlyIndex: 2; }
+  .ax-dly-4 {
+    --axDlyIndex: 3; }
+  .ax-dly-5 {
+    --axDlyIndex: 4; }
+  .ax-dly-6 {
+    --axDlyIndex: 5; }
+  .ax-dly-7 {
+    --axDlyIndex: 6; }
+  .ax-dly-8 {
+    --axDlyIndex: 7; }
+  .ax-dly-9 {
+    --axDlyIndex: 8; }
+  .ax-dly-10 {
+    --axDlyIndex: 9; }
 
 .ax-collapse {
   max-height: 0;

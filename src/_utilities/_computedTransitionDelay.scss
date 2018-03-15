@@ -1,7 +1,7 @@
-@function computedTransitionDelay ($multiplier: 0) {
+@function computedTransitionDelay ($variable: --nIndex) {
   @return calc(
     (
-      #{($multiplier - 1)} * var(--AwesomeCSSAnimationsStaggerDelay) +
+      var(#{$variable}) * var(--AwesomeCSSAnimationsStaggerDelay) +
       var(--AwesomeCSSAnimationsTransitionDelay)
     ) * 1ms
   )

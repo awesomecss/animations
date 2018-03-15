@@ -1,5 +1,7 @@
 @import '../_utilities/computedTransitionDelay';
 
+$axStaggerCountLimit: 15;
+
 .ax-NodeList {
   & > * {
     transition-property: all;
@@ -9,13 +11,26 @@
   }
 }
 
-@for $i from 1 to (30 + 1) {
-  .ax-NodeList.ax-stagger.ax-active,
-  .ax-hydrate.ax-active .ax-NodeList.ax-stagger {
+.ax-NodeList.ax-stagger {
+  & > * {
+    transition-delay: computedTransitionDelay();
+  }
+}
+
+@for $i from 1 to ($axStaggerCountLimit + 1) {
+  .ax-NodeList.ax-stagger {
     & > * {
       &:nth-child(#{$i}) {
-        transition-delay: computedTransitionDelay($i);
+        --nIndex: $i - 1;
       }
+    }
+  }
+}
+
+.ax-NodeList.ax-stagger {
+  & > * {
+    &:nth-child(n+#{$axStaggerCountLimit}) {
+      --nIndex: $axStaggerCountLimit - 1;
     }
   }
 }
