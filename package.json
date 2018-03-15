@@ -1,7 +1,7 @@
 {
   "name": "@awesomecss/animations",
   "packName": "animations",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "homepage": "https://jonquach.com",
   "description": "A functional CSS animation library for UI interactions.",
   "main": "index.js",
