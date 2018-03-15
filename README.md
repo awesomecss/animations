@@ -3,10 +3,9 @@
 A functional CSS animation library designed for UI interactions.
 
 * **Tiny** at around 8KB minified (1.3KB GZipped!)
+* **Zero** dependencies
 * **Performant** with stable 60FPS buttery smooth animations
-* **Works** with basically anything that can render HTML/CSS. 🙌
-
-(React? Sure. Rails? Awesome. PHP/Laravel/Wordpress? Great!)
+* **Works** with basically anything that can render HTML/CSS 🙌
 
 
 ## 🕹 Usage
