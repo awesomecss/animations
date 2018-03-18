@@ -16,69 +16,66 @@
   --AwesCSSAnimScaleLgValue: 0.5;
   --AwesCSSAnimScaleXlValue: 0.3; }
 
-.ax-Node {
+.ax-Node,
+.ax-NodeList > * {
   transition-property: all;
   transition-delay: var(--AwesCSSAnimDelay);
   transition-duration: var(--AwesCSSAnimDuration);
   transition-timing-function: ease;
   will-change: opacity; }
 
-.ax-NodeList > * {
-  transition-property: all;
-  transition-duration: var(--AwesCSSAnimDuration);
-  transition-timing-function: ease;
-  will-change: opacity; }
-
-.ax-NodeList.ax-stagger > * {
+.ax-stagger > * {
   transition-delay: calc( ( var(--nIndex) * var(--AwesCSSAnimStaggerDelay) + var(--AwesCSSAnimDelay) ) * 1ms); }
+  .ax-stagger > *:nth-child(n+15) {
+    --nIndex: 14; }
 
-.ax-NodeList.ax-stagger > *:nth-child(1) {
+.ax-stagger.ax-active > *:nth-child(1) {
   --nIndex: 0; }
 
-.ax-NodeList.ax-stagger > *:nth-child(2) {
+.ax-stagger.ax-active > *:nth-child(2) {
   --nIndex: 1; }
 
-.ax-NodeList.ax-stagger > *:nth-child(3) {
+.ax-stagger.ax-active > *:nth-child(3) {
   --nIndex: 2; }
 
-.ax-NodeList.ax-stagger > *:nth-child(4) {
+.ax-stagger.ax-active > *:nth-child(4) {
   --nIndex: 3; }
 
-.ax-NodeList.ax-stagger > *:nth-child(5) {
+.ax-stagger.ax-active > *:nth-child(5) {
   --nIndex: 4; }
 
-.ax-NodeList.ax-stagger > *:nth-child(6) {
+.ax-stagger.ax-active > *:nth-child(6) {
   --nIndex: 5; }
 
-.ax-NodeList.ax-stagger > *:nth-child(7) {
+.ax-stagger.ax-active > *:nth-child(7) {
   --nIndex: 6; }
 
-.ax-NodeList.ax-stagger > *:nth-child(8) {
+.ax-stagger.ax-active > *:nth-child(8) {
   --nIndex: 7; }
 
-.ax-NodeList.ax-stagger > *:nth-child(9) {
+.ax-stagger.ax-active > *:nth-child(9) {
   --nIndex: 8; }
 
-.ax-NodeList.ax-stagger > *:nth-child(10) {
+.ax-stagger.ax-active > *:nth-child(10) {
   --nIndex: 9; }
 
-.ax-NodeList.ax-stagger > *:nth-child(11) {
+.ax-stagger.ax-active > *:nth-child(11) {
   --nIndex: 10; }
 
-.ax-NodeList.ax-stagger > *:nth-child(12) {
+.ax-stagger.ax-active > *:nth-child(12) {
   --nIndex: 11; }
 
-.ax-NodeList.ax-stagger > *:nth-child(13) {
+.ax-stagger.ax-active > *:nth-child(13) {
   --nIndex: 12; }
 
-.ax-NodeList.ax-stagger > *:nth-child(14) {
+.ax-stagger.ax-active > *:nth-child(14) {
   --nIndex: 13; }
 
-.ax-NodeList.ax-stagger > *:nth-child(15) {
+.ax-stagger.ax-active > *:nth-child(15) {
   --nIndex: 14; }
 
-.ax-NodeList.ax-stagger > *:nth-child(n+15) {
-  --nIndex: 14; }
+.ax-stagger:not(.ax-active) > * {
+  --nIndex: 0; }
 
 .ax-tf-ease {
   transition-timing-function: ease; }

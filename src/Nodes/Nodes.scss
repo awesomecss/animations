@@ -1,4 +1,5 @@
-.ax-Node {
+.ax-Node,
+.ax-NodeList > * {
   transition-property: all;
   transition-delay: var(--AwesCSSAnimDelay);
   transition-duration: var(--AwesCSSAnimDuration);
