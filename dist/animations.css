@@ -29,52 +29,68 @@
   .ax-stagger > *:nth-child(n+15) {
     --nIndex: 14; }
 
-.ax-stagger.ax-active > *:nth-child(1) {
+.ax-stagger.ax-active > *:nth-child(1),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(1) {
   --nIndex: 0; }
 
-.ax-stagger.ax-active > *:nth-child(2) {
+.ax-stagger.ax-active > *:nth-child(2),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(2) {
   --nIndex: 1; }
 
-.ax-stagger.ax-active > *:nth-child(3) {
+.ax-stagger.ax-active > *:nth-child(3),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(3) {
   --nIndex: 2; }
 
-.ax-stagger.ax-active > *:nth-child(4) {
+.ax-stagger.ax-active > *:nth-child(4),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(4) {
   --nIndex: 3; }
 
-.ax-stagger.ax-active > *:nth-child(5) {
+.ax-stagger.ax-active > *:nth-child(5),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(5) {
   --nIndex: 4; }
 
-.ax-stagger.ax-active > *:nth-child(6) {
+.ax-stagger.ax-active > *:nth-child(6),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(6) {
   --nIndex: 5; }
 
-.ax-stagger.ax-active > *:nth-child(7) {
+.ax-stagger.ax-active > *:nth-child(7),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(7) {
   --nIndex: 6; }
 
-.ax-stagger.ax-active > *:nth-child(8) {
+.ax-stagger.ax-active > *:nth-child(8),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(8) {
   --nIndex: 7; }
 
-.ax-stagger.ax-active > *:nth-child(9) {
+.ax-stagger.ax-active > *:nth-child(9),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(9) {
   --nIndex: 8; }
 
-.ax-stagger.ax-active > *:nth-child(10) {
+.ax-stagger.ax-active > *:nth-child(10),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(10) {
   --nIndex: 9; }
 
-.ax-stagger.ax-active > *:nth-child(11) {
+.ax-stagger.ax-active > *:nth-child(11),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(11) {
   --nIndex: 10; }
 
-.ax-stagger.ax-active > *:nth-child(12) {
+.ax-stagger.ax-active > *:nth-child(12),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(12) {
   --nIndex: 11; }
 
-.ax-stagger.ax-active > *:nth-child(13) {
+.ax-stagger.ax-active > *:nth-child(13),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(13) {
   --nIndex: 12; }
 
-.ax-stagger.ax-active > *:nth-child(14) {
+.ax-stagger.ax-active > *:nth-child(14),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(14) {
   --nIndex: 13; }
 
-.ax-stagger.ax-active > *:nth-child(15) {
+.ax-stagger.ax-active > *:nth-child(15),
+.ax-hydrate.ax-active .ax-stagger > *:nth-child(15) {
   --nIndex: 14; }
 
-.ax-stagger:not(.ax-active) > * {
+.ax-stagger:not(.ax-active) > *,
+.ax-hydrate:not(.ax-active) .ax-stagger > * {
   --nIndex: 0; }
 
 .ax-tf-ease {

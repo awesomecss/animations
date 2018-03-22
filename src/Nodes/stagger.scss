@@ -10,20 +10,20 @@ $axStaggerCountLimit: 15;
       --nIndex: $axStaggerCountLimit - 1;
     }
   }
+}
 
-  &.ax-active {
-    & > * {
-      @for $i from 1 to ($axStaggerCountLimit + 1) {
-        &:nth-child(#{$i}) {
-          --nIndex: $i - 1;
-        }
+.ax-stagger.ax-active,
+.ax-hydrate.ax-active .ax-stagger {
+  & > * {
+    @for $i from 1 to ($axStaggerCountLimit + 1) {
+      &:nth-child(#{$i}) {
+        --nIndex: $i - 1;
       }
     }
   }
+}
 
-  &:not(.ax-active) {
-    & > * {
-      --nIndex: 0;
-    }
-  }
+.ax-stagger:not(.ax-active) > *,
+.ax-hydrate:not(.ax-active) .ax-stagger > * {
+  --nIndex: 0;
 }
