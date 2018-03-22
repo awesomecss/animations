@@ -8,7 +8,7 @@
 * **Works** with basically anything that can render HTML/CSS 🙌
 
 
-## 🕹 Usage
+## ⚡️ Usage
 
 ### Use the CDN
 
@@ -28,3 +28,10 @@ npm install @awesomecss/animations --save
 ```
 
 It'll be up to you to include/import either the `.scss` files (within `/src/`) or the compiled `.css` files (within `/dist`) with your project's set up.
+
+
+## 🕹 Demo
+
+Check out a mobile app UI mocked up with this library:
+
+[http://awesomecss-animations.surge.sh/app/](http://awesomecss-animations.surge.sh/app/)
